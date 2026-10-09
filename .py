@@ -147,11 +147,125 @@
 
 
 
-def rotateLeft(nums, k):
-    k = k % len(nums)   # agar k list se bada ho to bhi sahi kaam kare
-    nums[:] = nums[k:] + nums[:k]
 
-# Test:
-nums = [1, 2, 3, 4, 5]
-rotateLeft(nums, 9)
-print(nums)  # [3, 4, 5, 1, 2]
+# def change (aree , a):
+#     a = a %len(aree)
+#     aree[:] =aree[a:] + aree[:a]
+
+# aree = [1,2,3,4,5]
+# change (aree , 3) 
+# print(aree)
+
+
+# a = [1,2,3,4,5]
+# b = []
+# for i in range(4):
+#     x = a.pop(0)
+#     b.insert(0,x)
+# b = a+b
+# print(b)
+    
+
+
+
+
+
+
+
+
+
+
+
+
+# nums = [0, 0, 1,-2 , -1, -3, 4, 5 , 2 ,]
+# a = []
+
+
+
+# for i in nums:
+#     if i < 0 :
+#         a.insert(0,i)
+#     elif i == 0 : 
+#         a.append(i)
+#     else :
+#         a.append(0,i)
+# print(a)
+
+
+
+
+
+
+
+
+# a =  [ 1,2,3,3,4,654,63,2432,463]
+
+# b = a[0]
+
+# for i in a:
+#     if i > b  :
+#         b = i 
+# print (b)
+
+
+# n = 5832
+# sum = 0
+
+
+# for i in str(n):
+#     sum = sum + int(i)
+# print(sum)  
+
+
+# a =  [ 1,2,3,3,4,654,63,2432,463]
+# print(len(a))
+
+
+# n =["1","2","3","4",'5']
+# n.reverse() 
+# print(n)
+
+
+
+
+
+
+# a = [1,2,23,3,45,6,4,4,5,22,22,32,21] 
+
+# b = [] 
+
+# for i in a :
+#     if i not in b :
+#         b.append(i)
+# print(b)
+
+
+
+# a = [1,2,23,3,45,6,4,4,5,22,22,32,21] 
+# b =[ ]
+# for i in a :
+
+#     if  i not in b :
+
+#         print(i ,  "->" , a.count(i))
+
+#         b.append(i)
+
+
+
+
+
+
+a = [2, 5, 2, 8, 5, 2, 9, 8, 8, 1]
+b = []
+
+for i in a:
+    if i not in b:
+        count = 0
+
+        for j in a:
+            if i == j:
+                count += 1
+
+        print(i, "→", count)
+        b.append(i)
