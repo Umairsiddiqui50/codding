@@ -1,4 +1,6 @@
-# a = int(input ("enter low disite := "))
+git add .
+git commit -m "Describe your changes"
+git push# a = int(input ("enter low disite := "))
 # b = int(input ("enter hightist disit := "))
 
 # total = 0 
